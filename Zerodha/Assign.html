@@ -1,0 +1,126 @@
+<header>
+    <div class="navbar">
+        <img src="logo.svg" alt="logo" class="zero">
+        <div class="f">
+            <a href="#" class="signup">Signup</a>
+            <a href="#" class="about">About</a>
+            <a href="#" class="prod">Products</a>
+            <a href="#" id="prici">Pricing</a>
+            <a href="#" class="suppo">Support</a>
+            <img src="hamburger-menu.svg" alt="menu" id="menubar">
+        </div>
+    </div>
+</header>
+<div class="desc">
+    <div class="bx">
+        <img src="0rs.svg" alt="zero-rs" class="rs">
+        <div class="head">Free equity delivery</div>
+        <div class="su">All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.</div>
+    </div>
+
+    <div class="bx">
+        <img src="20rs.svg" alt="20-rs" class="rs">
+        <div class="head">Intraday and F&O trades</div>
+        <div class="su">Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.</div>
+    </div>
+
+    <div class="bx">
+        <img src="0rs.svg" alt="0-rs" class="rs">
+        <div class="head">Free direct MF</div>
+        <div class="su">All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.</div>
+    </div>
+</div>
+<style>
+    .navbar{
+    display: flex;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 0px 1px 2px #eee;
+}
+
+.zero{
+    height: 17px;
+    margin-left: 200px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.f{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 485px;
+}
+
+
+.f a{
+    text-decoration: none;
+    margin-right: 45px;
+    font-family: "Inter", sans-serif;
+    color: #666666;
+    font-size: 15px;
+}
+
+.f a:hover{
+    color: #387ed1;
+    transition: 0.3s;
+}
+
+#prici{
+    color: #387ed1;
+    font-weight: 500;
+} 
+
+
+#menubar{
+    height: 22px;
+    cursor: pointer;
+}
+
+.desc{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 156px;
+    padding-top: 100px;
+    justify-content: center;
+    left: -15px;
+    gap: 40px;
+
+
+}
+
+.rs{
+    height: 184.781px;
+    width: 250px;
+    position: relative;
+    left: 35px;
+}
+
+.bx{
+    width: 337.328px;
+    height: 402.953px;
+
+}
+
+
+.head{
+    text-align: center;
+    font-family:"Inter", sans-serif;
+    font-size: 1.75rem;
+    margin-top: 27px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.su{
+    margin-top: 36px;
+    font-size: 1.01rem;
+    color: #666;
+    font-family: "Inter", sans-serif;
+    line-height: 1.8;
+    text-align: center;
+}
+</style>
