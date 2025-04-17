@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 1</title>
+    </head>
+    <body>
+        Hello
+    </body>
+    <script>
+        function formatCurrency(amount,currencyCode){
+            return new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: currencyCode,
+            }).format(amount);
+        }
+        console.log(formatCurrency(1234567.89, 'INR'));
+    </script>
+</html>

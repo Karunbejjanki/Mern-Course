@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 5</title>
+    </head>
+    <body>
+        Hello
+    </body>
+    <script>
+        function evaluateConditions(obj){
+            if (obj.age > 18 && obj.hasLicense) return "Eligible to drive";
+            if (obj.temperature > 30 || obj.humidity > 70) return "Warning: High discomfort level";
+            if ((obj.role == "admin" || obj.role =="editor") && obj.isActive) return "Access granted";
+            if (!obj.ishappy) return "Be Happy";
+            return "No conditions met";
+        }
+        console.log(evaluateConditions({ age: 20, hasLicense: true }));
+        console.log(evaluateConditions({ temperature: 35, humidity: 60 }));
+        console.log(evaluateConditions({ role: "admin", isActive: true }));
+        console.log(evaluateConditions({ ishappy: false }));
+        console.log(evaluateConditions({ age: 17, hasLicense: false, temperature: 25, humidity: 40, role: "viewer", isActive: false, ishappy: true }));
+    </script>
+</html>

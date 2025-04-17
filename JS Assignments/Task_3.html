@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 3</title>
+    </head>
+    <body>
+        Hello
+    </body>
+    <script>
+       const listitems=document.querySelectorAll('li');
+       listitems.forEach((item, index)=>{
+        console.log(item.textContent);
+        if (index%2==1){
+            item.classList.add("Highlight");
+       }
+    });
+    console.log("Total items:",listitems.length);
+    </script>
+</html>

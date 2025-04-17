@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+    <body>
+        Hello
+    </body>
+    <script>
+       var GV="I Am Global Variable";
+       function ls(){
+        var LV="I Am Local Variable";
+        if (true){
+            let bv="I Am Block Variable";
+            console.log(bv);
+        }
+        console.log(LV);
+       }
+       ls();
+       console.log(GV);
+    </script>
+</html>

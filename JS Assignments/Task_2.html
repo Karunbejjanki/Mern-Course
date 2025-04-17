@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 2</title>
+    </head>
+    <body>
+        Hello
+    </body>
+    <script>
+        function findLongestPalindrome(str){
+            let maxi="";
+            for(let i=0;i<str.length;i++){
+               for(let j=1;j<str.length;j++){
+                    let subStr=str.slice(i,j+1);
+                    if (subStr==subStr.split("").reverse().join("") && subStr.length>maxi.length){
+                        maxi=subStr;
+                    }
+                }
+               } 
+            return maxi;
+        }
+        console.log(findLongestPalindrome("abccba"));
+    </script>
+</html>
