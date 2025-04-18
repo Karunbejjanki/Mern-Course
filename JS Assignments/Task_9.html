@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 9</title>
+</head>
+
+<body>
+    <div>
+        <span id="counter">0</span>
+        <button onclick="increment()">Increment</button>
+        <button onclick="decrement()">Decrement</button>
+    </div>
+</body>
+<script>
+    let count = 0;
+    const display = document.getElementById('counter');
+
+    function increment() {
+        count++;
+        display.textContent = count;
+        console.log("Incremented:", count);
+    }
+
+    function decrement() {
+        if (count > 0) {
+            count--;
+            console.log("Decremented:", count);
+        } else {
+            console.log("Cannot decrement. Count is already 0.");
+        }
+        display.textContent = count;
+    }
+</script>
+</html>

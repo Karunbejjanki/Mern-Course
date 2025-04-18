@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 10</title>
+</head>
+
+<body>
+    Hello
+</body>
+<script>
+    function processTransactions(transactions) {
+        let balance = 0, deposits = 0, withdrawals = 0;
+
+        for (let tx of transactions) {
+            if (tx.type === 'deposit') {
+                balance += tx.amount;
+                deposits += tx.amount;
+            } else if (tx.type === 'withdrawal') {
+                balance -= tx.amount;
+                withdrawals += tx.amount;
+            }
+        }
+
+        return { finalBalance: balance, totalDeposits: deposits, totalWithdrawals: withdrawals };
+    }
+    const transactions = [
+        { type: 'deposit', amount: 1000 },
+        { type: 'withdrawal', amount: 200 },
+        { type: 'deposit', amount: 500 },
+        { type: 'withdrawal', amount: 300 }
+    ];
+    const result = processTransactions(transactions);
+    console.log(" Final Result:", result);
+    console.log(" Final Balance:", result.finalBalance);
+    console.log(" Total Deposits:", result.totalDeposits);
+    console.log(" Total Withdrawals:", result.totalWithdrawals);
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 7</title>
+</head>
+
+<body>
+    Hello
+</body>
+<script>
+    class Book {
+        constructor(title, author, ISBN) {
+            this.title = title;
+            this.author = author;
+            this.ISBN = ISBN;
+            this.isBorrowed = false;
+        }
+        borrow() { this.isBorrowed = true; }
+        returnBook() { this.isBorrowed = false; }
+    }
+    class Library {
+        constructor() {
+            this.books = [];
+        }
+        addBook(book) { this.books.push(book); }
+        findBookByISBN(isbn) { return this.books.find(b => b.ISBN === isbn); }
+        listAvailableBooks() { return this.books.filter(b => !b.isBorrowed); }
+        listBorrowedBooks() { return this.books.filter(b => b.isBorrowed); }
+    }
+    const lib = new Library();
+    const book1 = new Book("1984", "George Orwell", "123");
+    const book2 = new Book("Brave New World", "Aldous Huxley", "456");
+    lib.addBook(book1);
+    lib.addBook(book2);
+    book1.borrow();
+    console.log("Available:", lib.listAvailableBooks());
+    console.log("Borrowed:", lib.listBorrowedBooks());
+    console.log("Find ISBN 456:", lib.findBookByISBN("456"));
+
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 11</title>
+</head>
+
+<body>
+    Hello
+</body>
+<script>
+    const products = [
+        { name: 'Laptop', category: 'Electronics', price: 1200 },
+        { name: 'T-Shirt', category: 'Apparel', price: 25 },
+        { name: 'Mouse', category: 'Electronics', price: 30 },
+        { name: 'Jeans', category: 'Apparel', price: 70 },
+    ];
+
+    function groupByCategory(items, categoryKey) {
+        const result = {};
+        for (let item of items) {
+            const key = item[categoryKey];
+            if (!result[key]) result[key] = [];
+            result[key].push(item);
+        }
+        return result;
+    }
+
+    const grouped = groupByCategory(products, 'category');
+
+    console.log("Grouped Products by Category:");
+    console.log(grouped);
+</script>
+
+</html>
