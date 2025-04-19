@@ -25,7 +25,6 @@
         const newItem = document.createElement('li');
         newItem.className = 'item';
         newItem.textContent = 'Item ' + (len + 1);
-        //adding the clicking event to the new item
         newItem.addEventListener('click', function () {
             this.remove();
         });
