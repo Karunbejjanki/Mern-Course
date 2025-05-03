@@ -1,0 +1,1 @@
+First i have run the code i get the 1st b as undefined and How JavaScript takes in function arguments then JavaScript is very free with function arguments.If fewer arguments are passed than the number of parameters, the remaining parameters would be undefined Rest Gathers all further arguments into an array
